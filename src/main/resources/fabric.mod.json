@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tankbread",
+	"version": "${version}",
+	"name": "Tank's mod",
+	"description": "This is an example description! Tell everyone what your mod is about!",
+	"authors": [
+		"Tankbread!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tankbread/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"tank.bread.mod.TanksMod"
+		],
+		"fabric-datagen": [
+			"tank.bread.mod.TanksModDataGenerator"
+		],
+      "client": [
+        "tank.bread.mod.TankbreadModClient"
+      ]
+	},
+	"mixins": [
+		"tankbread.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.8",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
